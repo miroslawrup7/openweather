@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.main a .weather-box {
+    transition: all .2s ease-in-out;
+}
+
+.main a:hover .weather-box {
+    scale: 1.05;
+}
+
+.main .refresh-cities-time {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+@media (max-width: 700px) {
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

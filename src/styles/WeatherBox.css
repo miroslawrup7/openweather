@@ -1,0 +1,47 @@
+.weather-box {
+    width: 200px;
+    height: 550px;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 12px -2px, rgba(0, 0, 0, 0.6) 0px 3px 7px -3px;
+}
+
+.weather-box .city {
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px 5px;
+}
+
+.weather-box .weather-data {
+    font-weight: 400;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.weather-box .weather-data p {
+    font-weight: 300;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.weather-box p {
+    font-weight: 300;
+    font-size: 0.6em;
+    padding: 0 20px;
+    text-align: right;
+}
+
+.weather-box .weather-data img {
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 6px 12px -2px, rgba(0, 0, 0, 0.6) 0px 3px 7px -3px;
+}
+
+
+@media (max-width: 700px) {
+    
+    .weather-box {
+        margin: 30px 0;
+    }
+    
+}
