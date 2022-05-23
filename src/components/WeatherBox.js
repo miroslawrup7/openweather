@@ -15,7 +15,7 @@ const WeatherBox = (props) => {
     const getData = () => {
         axios
             .get(
-                `http://api.openweathermap.org/data/2.5/weather?q=${props.city}&units=metric&APPID=6a5bbc9fd6c0ad49870cf3ee208ef6f1`
+                `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&units=metric&APPID=6a5bbc9fd6c0ad49870cf3ee208ef6f1`
             )
             .then((res) => {
                 setCityName(res.data.name);
@@ -25,7 +25,7 @@ const WeatherBox = (props) => {
                 setHumidity(res.data.main.humidity);
                 setPressure(res.data.main.pressure);
                 setIcon(
-                    `http://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`
+                    `https://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`
                 );
                 setRefreshTime(new Date().toLocaleString());
             })
